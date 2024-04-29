@@ -28,10 +28,6 @@ body{
     font-family: 'Poppins' , sans-serif;
 }
 
-footer {
-    background-color: var(--black-color);
-}
-
 header a {
     text-decoration: none;
   }
@@ -127,3 +123,6 @@ header a {
       display: block;
     }
   }
+
+/* Carousel */
+
