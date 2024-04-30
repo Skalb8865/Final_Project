@@ -1,6 +1,13 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// Mobile Navbar JS
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+var menu = document.querySelector('.menu');
+var menuBtn = document.querySelector('.menu-btn')
+var closeBtn = document.querySelector('.close-btn')
+
+menuBtn.addEventListener("click", () =>{
+  menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click",  () =>{
+  menu.classList.remove('active');
+});
