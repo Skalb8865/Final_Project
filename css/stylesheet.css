@@ -9,120 +9,132 @@
 --grey-color:#353836;
 --bold-font-weight:bold;
 }
+html{
+  background-color: var(--verylightgrey-color);
+}
 
-.logo{
+.navbar-logo{
     display: flex;
     align-items: center;
     height: 50px; 
-    width: 286px;
+    width: 183px;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
 
 body{
     font-family: 'Poppins' , sans-serif;
 }
 
-header a {
-    text-decoration: none;
-  }
-  
-  header {
-    padding: 0 20px;
-    padding-left: 0%;
-    background-color: var(--black-color);
-    height: 50px;
+main{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+  .navbar-links ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
   }
-  
-  ul {
+
+  .navbar-links li{
     list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
   }
-  
-  ul a {
-    color: white;
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0.55rem;
+    display: block;
   }
-  
-  ul li {
-    padding: 5px;
-    margin-left: 10px;
-  }
-  
-  ul li:hover {
+
+  .navbar-links li:hover{
     background: var(--CRed-color);
     border-radius:20px;
-    padding: 5px 20px;
-    transition: 0.15s ease;
+    padding: 2px 5px;
+    transition: 0.25s ease;
     color: var(--grey-color);
   }
-  
-  #hamburger-icon {
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-  }
-  
-  #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  
-  .open .bar2 {
-    opacity: 0;
-  }
-  
-  .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
-  
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .mobile-menu {
-    display: none;
+
+  .toggle-button {
     position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-button .bar{
+    height: 3px;
     width: 100%;
-  }
-  
-  .mobile-menu li {
-    margin-bottom: 10px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    header nav {
-      display: none;
-    }
-  
-    #hamburger-icon {
-      display: block;
-    }
+    background-color: white;
+    border-radius: 10px;
   }
 
-/* Carousel */
+  @media (max-width: 607px) {
+      .toggle-button {
+        display: flex;
+      }
 
+        .navbar-links {
+          display: none;
+          width: 100%;
+        }
+
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar-links ul {
+          width: 100%;
+         flex-direction: column; 
+        }
+
+        .navbar-links li {
+          text-align: center;
+        }
+
+        .navbar-links li a {
+          padding: .5rem 1rem;
+        }
+
+
+        .navbar-links.active{
+          display: flex;
+          transition: 0.25s ease;
+        }
+      }
+      
+      .parallax {
+        /* The image used */
+        background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
+      
+        /* Set a specific height */
+        min-height: 2000px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
