@@ -1,45 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-:root{
---CRed-color:#e31b22;
---CBlue-color:#00539b;
---black-color:black;
---verylightgrey-color:rgb(226, 222, 222);
---white-color:white;
---grey-color:#353836;
---bold-font-weight:bold;
-}
-html{
-  background-color: var(--verylightgrey-color);
+:root {
+  --CRed-color: #e31b22;
+  --CBlue-color: #00539b;
+  --black-color: black;
+  --lightgrey-color: rgb(167, 162, 162);
+  --white-color: white;
+  --grey-color: #555756;
+  --bold-font-weight: bold;
 }
 
-.navbar-logo{
-    display: flex;
-    align-items: center;
-    height: 50px; 
-    width: 183px;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 183px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: 'Poppins' , sans-serif;
-}
-
-main{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.navbar{
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,94 +35,174 @@ main{
   color: var(--white-color);
 }
 
-  .navbar-links ul{
-    margin: 0;
-    padding: 0;
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  padding-right: 1.2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--white-color);
+  padding: 0.55rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background: var(--CRed-color);
+  border-radius: 20px;
+  transition: 0.3s ease;
+  color: var(--grey-color);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 607px) {
+  .toggle-button {
     display: flex;
   }
 
-  .navbar-links li{
-    list-style: none;
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
   }
 
   .navbar-links li a {
-    text-decoration: none;
-    color: var(--white-color);
-    padding: 0.55rem;
-    display: block;
+    padding: .5rem 1rem;
   }
 
-  .navbar-links li:hover{
-    background: var(--CRed-color);
-    border-radius:20px;
-    padding: 2px 5px;
+
+  .navbar-links.active {
+    display: flex;
     transition: 0.25s ease;
-    color: var(--grey-color);
   }
-
-  .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-  }
-
-  .toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 607px) {
-      .toggle-button {
-        display: flex;
-      }
-
-        .navbar-links {
-          display: none;
-          width: 100%;
-        }
-
-        .navbar {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .navbar-links ul {
-          width: 100%;
-         flex-direction: column; 
-        }
-
-        .navbar-links li {
-          text-align: center;
-        }
-
-        .navbar-links li a {
-          padding: .5rem 1rem;
-        }
+}
 
 
-        .navbar-links.active{
-          display: flex;
-          transition: 0.25s ease;
-        }
-      }
-      
-      .parallax {
-        /* The image used */
-        background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
-      
-        /* Set a specific height */
-        min-height: 2000px; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+
+
+/* Parallax */
+.parallax {
+  /* The image used */
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
+
+  /* Set a specific height */
+  min-height: 850px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+/*Main Sections Classes and Styling*/
+.main {
+  background-color: #323232;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.main_content {
+  color: var(--grey-color);
+  width: 100%;
+}
+
+.main_img--container {
+  text-align: center;
+  font-size: 14rem;
+}
+
+.main-img {
+  margin: 10px;
+  height: 450px;
+  width: 450px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.main_content h1 {
+  background-color: var(--white-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 3rem;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.main_content h2 {
+  background-color: var(--lightgrey-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+.main_content p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
