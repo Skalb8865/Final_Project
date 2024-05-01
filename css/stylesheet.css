@@ -16,6 +16,8 @@
   align-items: center;
   height: 69px;
   width: 190px;
+  height: 69px;
+  width: 190px;
 }
 
 * {
@@ -23,10 +25,12 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  text-decoration: none;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
   min-height: 100vh;
 }
 
@@ -82,7 +86,11 @@ header.sticky {
 
 header .menu {
   position: relative;
+header .menu {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   align-items: center;
 }
@@ -95,11 +103,23 @@ header .menu a {
   padding: 0 10px;
   border-radius: 20px;
   transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s ease;
 }
 
 header .menu a:hover {
   background: var(--CRed-color);
   border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.3s ease;
+  color: var(--white-color);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -320,144 +340,67 @@ header .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
-.card_container {
-  padding-block: 5rem;
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
 }
 
-.card_content {
-  margin-inline: 1.75rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
+.main_content {
+  color: var(--grey-color);
+  width: 100%;
 }
 
-.card_article {
-  width: 300px;
-  border-radius: 1.25rem;
-  overflow: hidden;
-}
-
-.card_image {
-  position: relative;
-  background-color: var(--black-color);
-  margin-bottom: -0.75rem;
-}
-
-.card_data {
-  background-color: var(--black-color);
-  padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
+.main_img--container {
   text-align: center;
   position: relative;
   z-index: 10;
 }
 
-.card_img {
-  height: 250px;
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 5;
+.main-img {
+  margin: 10px;
+  height: 450px;
+  width: 450px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
 }
 
-.card_name {
-  font-size: 1.25rem;
-  color: var(--lightgrey-color);
-  margin-bottom: 0.75rem;
-}
-
-.card_description {
-  font-weight: 500;
-  margin-bottom: 1.75rem;
-}
-
-.card_button {
-  display: inline-block;
-  background-color: var(--CBlue-color);
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
-  color: var(--white-color);
-  font-weight: 600;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: initial;
-  height: initial;
+.main_content h1 {
+  background-color: var(--white-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-size: 3rem;
-  color: var(--white-color);
+  margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
-.swiper-button-prev {
-  left: 0;
+.main_content h2 {
+  background-color: var(--lightgrey-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 
-.swiper-button-next {
-  right: 0;
-}
-
-.swiper-pagination-bullet {
-  background-color: var(--CBlue-color);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--black-color);
-}
-
-@media screen and (max-width: 320px) {
-  .card_data {
-    padding: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card_content {
-    margin-inline: 3rem;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
-}
-
-@media screen and (min-width:1120px) {
-  .card_container {
-    max-width: 1120px;
-  }
-
-  .swiper-button-next {
-    right: -1rem;
-  }
-
-  .swiper-button-prev {
-    left: -1rem;
-  }
-}
-
-/* Style the hr tag */
-hr {
-  border: none;
-  border-top: 3px double #333;
-  color: #333;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
-  background-color: var(--background-color);
-}
-
-hr::after {
-  background: var(--background-color);
-  content: '§';
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
+.main_content p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
