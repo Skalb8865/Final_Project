@@ -11,12 +11,9 @@
   --bold-font-weight: bold;
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  height: 69px;
-  width: 190px;
-}
+/*****************************/
+    /* HTML page styling Start*/
+/*****************************/
 
 * {
   box-sizing: border-box;
@@ -30,35 +27,21 @@ body {
   min-height: 100vh;
 }
 
-.section-main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*****************************/
+    /* HTML page styling End */
+/*****************************/
+
+
+
+/*****************************/
+        /* Navbar Start*/
+/*****************************/
+
+.navbar-logo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px 100px;
-}
-
-.section-main h1 {
-  color: var(--white-color);
-  font-size: 60px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 80px;
-}
-
-.section-main a {
-  position: absolute;
-  bottom: 0;
-  font-size: 15px;
-  color: var(--lightgrey-color);
+  height: 69px;
+  width: 190px;
 }
 
 header {
@@ -116,6 +99,49 @@ header .btn {
   display: none;
 }
 
+/*****************************/
+        /* Navbar End*/
+/*****************************/
+
+
+
+/*****************************/
+        /* Sections Start */
+/*****************************/
+
+/* Main Section */
+.section-main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1 {
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.section-main a {
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
+  color: var(--lightgrey-color);
+}
+
+/* About Section */
 .section-two {
   min-height: 70vh;
   background: var(--background-color);
@@ -123,7 +149,6 @@ header .btn {
   padding-bottom: 0px;
   margin-bottom: 0%;
 }
-
 
 .section-two h2 {
   color: var(--white-color);
@@ -145,6 +170,15 @@ header .btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
+/* Quote Styling */
+.section-two .quote {
+  text-align: center;
+  padding-top: 2.7rem;
+  padding-bottom: 3rem;
+  color: var(--grey-color);
+}
+
+/* Hotel Section */
 .section-three {
   min-height: 65vh;
   background: var(--background-color);
@@ -173,8 +207,9 @@ header .btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
+/* Activities Section */
 .section-four {
-  min-height: 65vh;
+  min-height: 168vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -201,6 +236,7 @@ header .btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
+/* Transportation Section */
 .section-five {
   min-height: 100vh;
   background: var(--background-color);
@@ -225,7 +261,7 @@ header .btn {
   margin: 30px 0;
 }
 
-
+/* Restaraunts Section */
 .section-six {
   min-height: 100vh;
   background: var(--background-color);
@@ -250,22 +286,35 @@ header .btn {
   margin: 30px 0;
 }
 
+/* Google Map api Styling */
+
+/* .map_wrapper{
+  max-width: 500px;
+} */
+
 .google_map {
   text-align: center;
   padding-bottom: 8rem;
+  padding-top: 1.2rem;
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
+  position: relative;
 }
 
-.quote {
-  text-align: center;
-  padding-top: 2.7rem;
-  padding-bottom: 3rem;
+.google_map iframe{
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
+/* Footer Styling */
 #footer_section {
   background-color: var(--black-color);
   color: var(--white-color);
 }
 
+/* Navbar Media Query */
 @media(max-width: 1060px) {
   header .btn {
     display: block;
@@ -304,17 +353,32 @@ header .btn {
   }
 }
 
+/* Main Section Media Query */
 @media (max-width: 630px) {
   .section-main h1 {
     font-size: 54px;
     line-height: 60px;
   }
+
+  .section-five h2 {
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+    margin-top: 102px;
+    text-align: center;
+  }
 }
+/*****************************/
+        /* Sections End */
+/*****************************/
 
 
 
-/* Cards */
-
+/*****************************/
+    /* Swiper Cards start */
+/*****************************/
 
 .container {
   display: flex;
@@ -362,6 +426,10 @@ header .btn {
   z-index: 5;
 }
 
+.card_data h3{
+  font-size: 19px;
+}
+
 .card_name {
   font-size: 1.25rem;
   color: var(--lightgrey-color);
@@ -403,15 +471,7 @@ header .btn {
   right: 0;
 }
 
-.swiper-pagination-bullet {
-  background-color: var(--CBlue-color);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--black-color);
-}
-
+/* Swiper Cards Media Querys */
 @media screen and (max-width: 320px) {
   .card_data {
     padding: 1rem;
@@ -443,7 +503,15 @@ header .btn {
   }
 }
 
-/* Style the hr tag */
+/*****************************/
+    /* Swiper Cards end */
+/*****************************/
+
+
+/*****************************/
+    /* hr Styling start*/
+/*****************************/
+
 hr {
   border: none;
   border-top: 3px double #333;
@@ -461,3 +529,60 @@ hr::after {
   position: relative;
   top: -13px;
 }
+
+/*****************************/
+     /* hr Styling end*/
+/*****************************/
+
+
+
+/********************************/
+   /* Image Fade effect Start*/
+/*******************************/
+
+.image_fade_container {
+  position: relative;
+  width: 33%;
+  padding-bottom: 2.3rem;
+  float:left;
+}
+
+.card_fade_image {
+  display: block;
+  height: auto;
+  height: 20rem;
+  width: 22rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20rem;
+  width: 22rem;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--black-color);
+}
+
+.image_fade_container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/********************************/
+   /* Image Fade effect End*/
+/*******************************/
