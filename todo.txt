@@ -1,0 +1,118 @@
+
+
+change hotel button border style 
+  border-style: outset;
+
+
+
+
+change hotel card to use hotel image
+
+
+
+
+Experience the new Marriott Columbus OSU hotel, a luxury hotel that's perfect for both the business and leisure traveler. Ideally located within minutes of The Ohio State University, our OSU hotel is convenient to all the action and activities at Jerome Schottenstein Center, Ohio Stadium and the Ohio State University campus."
+
+
+
+
+"Our hotel is in the heart of the city and currently is ranked number 1! The Holiday Inn Express & Suites® Ohio State University- OSU the only IHG hotel at OSU!"
+
+
+
+
+card_scroll_container:
+  add margin-bottom: 25px;
+
+
+
+
+hotel section:
+   min-height:163vh;
+
+
+
+
+
+change navbar columbus logo to transparent
+
+
+
+
+
+change .card height to make them smaller and fit image in it.
+
+
+
+
+
+change hr html to hr with a class and change the hr css to that class
+
+footer section html:   
+   <footer>
+    <div id="footer_section">
+      <div id="contact_section">
+        <h3>Contact Us</h3>
+        <hr class="small_hr">
+        <p>90 West Broad Street</p>
+        <p class="add_line2">Columbus Ohio 43215</p>
+        <p class="phone">Phone:(614) 645-3111</p>
+        <!-- add
+          https://www.columbus.gov/Home
+         https://www.youtube.com/watch?v=-eZMk9icpeI
+         https://fontawesome.com/icons/x-twitter?f=brands&s=solid
+         https://www.tripadvisor.com/Hotels-g50226-Columbus_Ohio-Hotels.html
+        https://www.youtube.com/watch?v=STqW8mppEic -->
+      </div>
+    </div>
+  </footer>
+
+footer section css: 
+#footer_section{
+  background-color: var(--black-color);
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#contact_section{
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+ background-color: var(--black-color);
+ color: var(--white-color);
+ width: 175px;
+ min-height: 100vh;
+}
+
+
+#contact_section h3{
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+#contact_section p {
+  float: left;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_section .add_line2{
+  padding-top: 13px;
+}
+
+#contact_section .phone{
+  padding-top: 17.5px;
+}
+
+.small_hr{
+  width: 35px;
+  color: var(--CBlue-color);
+  background-color: var(--CBlue-color);
+  margin-bottom: 30px;
+  border: none;
+  border-top: 5px solid var(--CBlue-color);
+  color: #333;
+}
