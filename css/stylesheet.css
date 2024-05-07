@@ -888,22 +888,6 @@ header .btn {
   padding-bottom: 25px;
 }
 
-#contact_section p {
-  float: left;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  display: flex;
-  flex-direction: column;
-}
-
-#contact_section .add_line2 {
-  padding-top: 13px;
-}
-
-#contact_section .phone {
-  padding-top: 17.5px;
-}
-
 .small_hr {
   width: 35px;
   color: var(--CBlue-color);
@@ -912,4 +896,57 @@ header .btn {
   border: none;
   border-top: 5px solid var(--CBlue-color);
   color: #333;
+}
+
+.icon{
+  color: black;
+}
+
+.icon a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.button{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: var(--white-color);
+  border-radius: 50px;
+  line-height: 60px;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+  transition: 0.7s;
+  text-decoration: none;
+}
+
+.wrapper .button .icon{
+  font-size: 20px;
+}
+
+.wrapper .button:hover{
+  width: 85px;
+  transition: 0.7s;
+}
+
+.wrapper  .button:nth-child(1):hover .icon{
+  color: #4267B2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4267B2), to(#4267B2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9ce34), to(#6228d7));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: -webkit-gradient(linear, left top, left bottom, from(#1da1f2), to(#1da1f2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
