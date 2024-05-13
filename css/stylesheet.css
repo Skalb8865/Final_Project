@@ -250,6 +250,13 @@ header .nav-btn {
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.section-two span{
+  text-align: center;
 }
 
 .section-two h2 {
@@ -282,7 +289,7 @@ header .nav-btn {
 
 /* Hotel Section */
 .section-three {
-  min-height: 65vh;
+  min-height: 100vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -311,17 +318,29 @@ header .nav-btn {
 
 /* Activities Section */
 .section-four {
-  min-height: 200vh;
+  min-height: 280vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .section-four h2 {
   color: var(--white-color);
   font-size: 50px;
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.section-four h3{
+  color: var(--lightgrey-color);
+  font-size: 40px;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 30px 0;
   text-align: center;
@@ -338,6 +357,14 @@ header .nav-btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
+.family h3{
+  margin-top: 100px;
+}
+
+.museums h3 {
+  margin-top: 100px;
+}
+
 /* Transportation Section */
 .section-five {
   min-height: 163vh;
@@ -345,6 +372,9 @@ header .nav-btn {
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .section-five h2 {
@@ -365,11 +395,14 @@ header .nav-btn {
 
 /* Restaraunts Section */
 .section-six {
-  min-height: 100vh;
+  min-height: 138vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .section-six h2 {
@@ -378,8 +411,10 @@ header .nav-btn {
   font-weight: 700;
   text-transform: uppercase;
   margin: 30px 0;
-  margin-top: 102px;
+  margin-top: 55px;
   text-align: center;
+  margin-bottom: 25px;
+  margin: 55px 0px 40px 0;
 }
 
 .section-six p {
@@ -523,6 +558,13 @@ header .nav-btn {
   border-radius: 0.75rem;
   color: var(--white-color);
   font-weight: 600;
+  transition: all .4s ease;
+}
+
+.card_button:hover{
+  transform: translate3D(0, -1px, 0) scale(1.05);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+  transition: all .4s ease;
 }
 
 .swiper-button-prev::after,
@@ -835,6 +877,38 @@ header .nav-btn {
   width: 240px; 
 }
 
+@media screen and (max-width:1000px){
+  .footer_link_wrapper{
+    flex-direction: column;
+  }
+.footer_links{
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .footer_link_items{
+    margin:0;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:750px){
+    .services_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .social_media_wrapper{
+        flex-direction: column;
+    }
+    .website_rights{
+        margin-bottom: 1.5rem;
+    }
+    .social_media{
+        margin-bottom: 1.5rem;
+    }
+}
+
 .row {
   margin: 8px -16px;
 }
@@ -871,7 +945,7 @@ header .nav-btn {
 }
 
 /* Style the buttons */
-.btn {
+.hotel-btn {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -880,12 +954,12 @@ header .nav-btn {
 }
 
 /* Add a grey background color on mouse-over */
-.btn:hover {
+.hotel-btn:hover {
   background-color: #ddd;
 }
 
 /* Add a dark background color to the active button */
-.btn.active {
+.hotel-btn.active {
   background-color: #666;
    color: white;
 }
