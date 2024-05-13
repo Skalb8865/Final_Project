@@ -33,6 +33,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 
 br {
@@ -105,7 +106,7 @@ header .menu a:hover {
   transition: 0.3s ease;
 }
 
-header .btn {
+header .nav-btn {
   color: var(--white-color);
   font-size: 25px;
   cursor: pointer;
@@ -127,7 +128,7 @@ header .btn {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url("https://imageio.forbes.com/specials-images/imageserve/640de10f338a5600a5b50055/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&height=900&width=1600&fit=bounds");
+  background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/236304/Columbus-Ohio-Skyline-Mural-Wallpaper.jpg?v=638165404917430000");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,11 +148,99 @@ header .btn {
   line-height: 80px;
 }
 
-.section-main a {
-  position: absolute;
-  bottom: 0;
-  font-size: 15px;
-  color: var(--lightgrey-color);
+
+.hotel-section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/CMHAK/cmhak-entrance-0018-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1300px:*");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.hotel-section-main h1{
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.activities-section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/columbus/NVMM_and_skyline_at_night_credit_Randall_Schieber_edccdf79-d5c9-4b36-85b3-271667d7d2e8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.activities-section-main h1{
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.transportation-section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://cdn.columbusunderground.com/wp-content/uploads/2021/09/cota-bus-high-street-downtown.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.transportation-section-main{
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.restaraunt-section-main{
+  min-height: 100vh;
+  background-image: url("https://images.pexels.com/photos/9638804/pexels-photo-9638804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.restaraunt-section-main{
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
 }
 
 /* About Section */
@@ -299,27 +388,9 @@ header .btn {
   margin: 30px 0;
 }
 
-
-
-.google_map {
-  text-align: center;
-  padding-bottom: 8rem;
-  padding-top: 1.2rem;
-  width: 100%;
-  max-width: 1100px;
-  overflow: hidden;
-  position: relative;
-}
-
-.google_map iframe {
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
 /* Navbar Media Query */
 @media(max-width: 1060px) {
-  header .btn {
+  header .nav-btn {
     display: block;
   }
 
@@ -627,267 +698,6 @@ header .btn {
   font-size: 5px;
 }
 
-.cards {
-  display: flex;
-  padding: 25px 0px;
-  list-style: none;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 100%;
-  padding: 20px;
-  background: var(--black-color);
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
-  transition: all 0.2s;
-  text-align: center;
-  align-items: center;
-  border-style: solid;
-  border-color: var(--CRed-color);
-  transition: all .4s ease;
-  height: 400px;
-}
-
-.card:hover {
-  transform: translate3D(0, -1px, 0) scale(1.05);
-  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-  transition: all .4s ease;
-  border-style: solid;
-  border-color: var(--darkred);
-  background-color: var(--CRed-color);
-}
-
-.card:not(:last-child) {
-  margin-right: 10px;
-}
-
-.card .card-title {
-  font-size: 20px;
-}
-
-.card .card-content-transportation {
-  margin: 20px 0;
-  max-width: 85%;
-}
-
-.card .card-link-wrapper {
-  margin-top: auto;
-}
-
-.card .card-link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: var(--red);
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: all .4s ease;
-  border-style: outset;
-  border-color: var(--darkred);
-}
-
-.card-link:hover {
-  transition: all .4s ease;
-  transform: translate3D(0, -1px, 0) scale(1.10);
-  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-  background-color: var(--darkred);
-  border-style: outset;
-  border-color: var(--darkred);
-}
-
-.cards::-webkit-scrollbar {
-  height: 12px;
-}
-
-.cards::-webkit-scrollbar-thumb,
-.cards::-webkit-scrollbar-track {
-  border-radius: 92px;
-}
-
-.cards::-webkit-scrollbar-thumb {
-  background: var(--darkred);
-}
-
-.cards::-webkit-scrollbar-track {
-  background: var(--thumb);
-}
-
-@media (min-width: 500px) {
-  .card {
-    flex-basis: calc(50% - 10px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  .card {
-    flex-basis: calc(calc(100% / 3) - 20px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .card {
-    flex-basis: calc(25% - 30px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 40px;
-  }
-}
-
-
-.card_blue {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 100%;
-  padding: 20px;
-  background: var(--black-color);
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
-  transition: all 0.2s;
-  text-align: center;
-  align-items: center;
-  transition: all .4s ease;
-}
-
-.blue-trasnportation-card-img {
-  width: 250px;
-  height: 250px;
-  transition: all .4s ease;
-  border-style: solid;
-  border-color: var(--white-color);
-}
-
-.card_blue:not(:last-child) {
-  margin-right: 10px;
-}
-
-.card_blue:hover {
-  color: var(--white);
-  background: var(--CBlue-color);
-  transform: translate3D(0, -1px, 0) scale(1.05);
-  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-  transition: all .4s ease;
-  border-style: solid;
-  border-color: var(--darkred);
-  background-color: var(--CRed-color);
-}
-
-.card_blue .card-title {
-  font-size: 20px;
-}
-
-.card_blue .card-content-transportation {
-  margin: 20px 0;
-  max-width: 85%;
-}
-
-.card_blue .card-link-wrapper {
-  margin-top: auto;
-}
-
-.card_blue .card-blue-link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: var(--CBlue-color);
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: all .4s ease;
-  border-style: outset;
-  border-color: var(--CBlue-dark-color);
-}
-
-.card_blue .card-blue-link:hover {
-  transition: all .4s ease;
-  border-style: outset;
-  border-color: var(--CBlue-dark-color);
-  background-color: var(--CBlue-dark-color);
-}
-
-.cards::-webkit-scrollbar {
-  height: 12px;
-}
-
-.cards::-webkit-scrollbar-thumb,
-.cards::-webkit-scrollbar-track {
-  border-radius: 92px;
-}
-
-.cards::-webkit-scrollbar-thumb {
-  background: var(--darkred);
-}
-
-.cards::-webkit-scrollbar-track {
-  background: var(--thumb);
-}
-
-@media (min-width: 500px) {
-  .card_blue {
-    flex-basis: calc(50% - 10px);
-  }
-
-  .card_blue:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  .card_blue {
-    flex-basis: calc(calc(100% / 3) - 20px);
-  }
-
-  .card_blue:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .card_blue {
-    flex-basis: calc(25% - 30px);
-  }
-
-  .card_blue:not(:last-child) {
-    margin-right: 40px;
-  }
-}
-
-#footer_section {
-  background-color: var(--black-color);
-  margin: 0;
-  padding: 20px;
-  text-decoration: none;
-}
-
-#contact_section {
-  margin-top: 10px;
-  margin-left: 60px;
-  padding: 0;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  width: 175px;
-  min-height: 100vh;
-}
-
-
-#contact_section h3 {
-  padding-left: 20px;
-  padding-bottom: 25px;
-}
-
 .small_hr {
   width: 35px;
   color: var(--CBlue-color);
@@ -900,6 +710,7 @@ header .btn {
 
 .icon{
   color: black;
+  cursor: pointer;
 }
 
 .icon a{
@@ -935,18 +746,146 @@ header .btn {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .wrapper .button:nth-child(2):hover .icon{
   background: -webkit-gradient(linear, left top, left bottom, from(#f9ce34), to(#6228d7));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .wrapper .button:nth-child(3):hover .icon{
   background: -webkit-gradient(linear, left top, left bottom, from(#1da1f2), to(#1da1f2));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .wrapper .button:nth-child(4):hover .icon{
   background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+
+/****************************************************************/
+/*Footer Classes and Styling*/
+.footer_container{
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_container p{
+  color: var(--white-color);
+  padding-bottom: 10px;
+}
+
+.footer_links{
+  width:100%; 
+  max-width:1000px;
+  display:flex;
+  justify-content: center;
+}
+.footer_link_wrapper{
+  display:flex;
+}
+.footer_link_items{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:16px;
+  text-align: left;
+  width:16rem;
+  box-sizing: border-box;
+}
+.footer_link_items h2{
+  color:#fff; 
+  margin-bottom: 1rem; /*margin: 0 0 1rem 0;*/
+}
+.footer_link_items a{
+  color:#fff;
+  text-decoration: none;
+  margin-bottom: .5rem;
+  transition: .3s ease-out;
+}
+.footer_link_items a:hover{
+  color: var(--CBlue-color);
+  transition: .3s ease-out;
+}
+.social_media{
+  max-width: 1000px;
+  width: 100%;
+}
+.social_media_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+.website_rights{
+  color:#fff;
+}
+.social_media_icons{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 240px; 
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
 }

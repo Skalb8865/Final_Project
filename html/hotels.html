@@ -14,7 +14,6 @@
 <body>
   <header>
     <!-- https://webdesign.tutsplus.com/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922t -->
-    
     <!--------------------------------->
     <!-- Navbar Start -->
     <!-------------------------------->
@@ -38,7 +37,6 @@
     <!-- Navbar End -->
     <!-------------------------------->
 
-
   </header>
   <main>
 
@@ -48,37 +46,97 @@
 
     <div id="section-head"></div>
     <div>
-      <section class="section-main">
+      <section class="hotel-section-main">
         <h1>Columbus Ohio</h1>
-        <div id="about-section"></div>
       </section>
 
       <!--------------------------------->
-      <!-- About Section Start -->
+      <!-- Hotel Section Start -->
       <!-------------------------------->
 
-      <section class="section-two">
-        <h2>About Columbus Ohio</h2>
-        <p>The best city in Ohio is Columbus. Columbus is the Heart of Ohio. It is the most well known and the most
-          poupular city in all of Ohio. Columbus Ohio was founeded on February 14, 1812, it is a wonderful place to
-          visit with many things to do and many places to explore. Three great sports teams and beautiful stadiums that
-          everyone will love. There are many great restaruants in Columbus. It is all around a really great place to
-          visit with tons of things to do and eat. You will love it here. Columbus is for everyone no matter who you
-          are.</p>
-        <div>
-          <p class="quote">"I can't escape being born in Pike County, Kentucky, grandson of a miner, Luther Tibbs, and
-            his
-            wife, Earlene, and traveling as a child up and down Route 23 between Kentucky and Columbus, Ohio, where I
-            was
-            raised, experiencing life via working-class people. Nor do I want to escape." <br><br>
-            - Dwight Yoakam
-          </p>
-        </div>
+      <div id="hotel-section"></div>
+      <section class="section-three">
+        <h2>The best Hotels in Columbus</h2>
+        <h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
       </section>
 
-      <!--------------------------------->
-      <!-- About Section End -->
-      <!-------------------------------->
+
   </main>
 
   <!----------------------------------------->
