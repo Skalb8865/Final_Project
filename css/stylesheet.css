@@ -311,7 +311,7 @@ header .nav-btn {
 
 /* Activities Section */
 .section-four {
-  min-height: 168vh;
+  min-height: 200vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
