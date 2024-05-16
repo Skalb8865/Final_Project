@@ -1,7 +1,8 @@
 // Mobile Navbar JS Start
 var menu = document.querySelector('.menu');
-var menuBtn = document.querySelector('.menu-btn')
-var closeBtn = document.querySelector('.close-btn')
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+var menuLinks = menu.querySelectorAll('a');
 
 menuBtn.addEventListener("click", () => {
   menu.classList.add('active');
@@ -9,6 +10,13 @@ menuBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   menu.classList.remove('active');
+});
+
+// Adding event listeners to each link in the menu
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
 });
 
 // Mobile Navbar JS End
@@ -25,7 +33,7 @@ let swiperCards = new Swiper('.card_content', {
     prevEl: '.swiper-button-prev',
   },
 
-// Changes the amount of cards on the page depending on the size of the webpage
+  // Changes the amount of cards on the page depending on the size of the webpage
   breakpoints: {
     600: {
       slidesPerView: 2,
@@ -78,9 +86,9 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+var btns = btnContainer.getElementsByClassName("hotel-btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";

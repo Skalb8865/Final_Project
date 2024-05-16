@@ -43,8 +43,6 @@
     <!--------------------------------->
     <!-- Head Section Start -->
     <!-------------------------------->
-
-    <div id="section-head"></div>
     <div>
       <section class="hotel-section-main">
         <h1>Columbus Ohio</h1>
@@ -54,86 +52,111 @@
       <!-- Hotel Section Start -->
       <!-------------------------------->
 
-      <div id="hotel-section"></div>
       <section class="section-three">
         <h2>The best Hotels in Columbus</h2>
-        <h2>PORTFOLIO</h2>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-</div>
+        <h3>Best Hotels in Columbus for Every Budget</h3>
+        <div id="myBtnContainer">
+          <button class="hotel-btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="hotel-btn" onclick="filterSelection('expensive')"> Expensive</button>
+          <button class="hotel-btn" onclick="filterSelection('mid end')"> Mid End</button>
+          <button class="hotel-btn" onclick="filterSelection('cheap')"> Cheap</button>
+        </div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column cheap">
+            <div class="content">
+              <img src="../res/hotels/motel6.png" alt="" style="width:100%">
+              <h4>Motel 6</h4>
+              <p>1309 W St James Lutheran Ln, Columbus, OH 43228. Starting at $63 a night before taxes.</p>
+              <a class="learn-more-button" href="https://www.booking.com/hotel/us/motel-6-columbus-west.html"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column cheap">
+            <div class="content">
+              <img src="../res/hotels/Extended Stay America.png" alt="" style="width:100%">
+              <h4>Extended Stay America</h4>
+              <p>4200 Stelzer Rd, Columbus, OH, 43230. Starting at $71 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/hotel-stelzer-road-columbus.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=51701508_91843072_2_1_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=51701508_91843072_2_1_0;hpos=1;matching_block_id=51701508_91843072_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=51701508_91843072_2_1_0__20994;srepoch=1715651741;srpvid=9fa40d889fcb00d4;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column cheap">
+            <div class="content">
+              <img src="../res/hotels/holiday-inn-express.png" alt="" style="width:100%">
+              <h4>Holiday Inn Express</h4>
+              <p>3030 Plaza Properties Boulevard, Columbus, OH, 43219. Starting at $81 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/four-points-by-sheraton-columbus.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=24528708_344326795_2_1_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=24528708_344326795_2_1_0;hpos=1;matching_block_id=24528708_344326795_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=24528708_344326795_2_1_0__24900;srepoch=1715651781;srpvid=f7130d9f89d90146;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
 
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
+          <div class="column mid end">
+            <div class="content">
+              <img src="../res/hotels/Red Roof Inn PLUS+.png" alt="" style="width:100%">
+              <h4>Red Roof Inn PLUS+</h4>
+              <p>111 E. Nationwide Blvd., Columbus, OH, 43215. Starting at $93 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/red-roof-inn-columbus-downtown-convention-center.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=44097802_0_2_0_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=44097802_0_2_0_0;hpos=1;matching_block_id=44097802_0_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=44097802_0_2_0_0__15214;srepoch=1715651835;srpvid=0d8b0dbb147f002f;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column mid end">
+            <div class="content">
+              <img src="../res/hotels/La Quinta Inn & Suites.png" alt="" style="width:100%">
+              <h4>La Quinta Inn & Suites </h4>
+              <p>5510 Trabue Road, Columbus, OH, 43228. Starting at $96 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.wyndhamhotels.com/laquinta/columbus-ohio/la-quinta-columbus-west-hilliard/overview"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column mid end">
+            <div class="content">
+              <img src="../res/hotels/SpringHill Suites.png" alt="" style="width:100%">
+              <h4>SpringHill Suites</h4>
+              <p>1421 Olentangy River Rd, Columbus, OH, 43212. Starting at $104 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/springhill-suites-marriott-columbus.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=33095701_94414454_0_1_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=33095701_94414454_0_1_0;hpos=1;matching_block_id=33095701_94414454_0_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=33095701_94414454_0_1_0__24600;srepoch=1715651963;srpvid=1b7d0df856b40348;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
 
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
+          <div class="column expensive">
+            <div class="content">
+              <img src="../res/hotels/Graduate Columbus.png" alt="" style="width:100%">
+              <h4>Graduate Columbus</h4>
+              <p>750 North High Street, Columbus, OH, 43215. Starting at $166 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/graduate-columbus.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=500675001_298953739_2_2_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=500675001_298953739_2_2_0;hpos=1;matching_block_id=500675001_298953739_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=500675001_298953739_2_2_0__26900;srepoch=1715652047;srpvid=34a10e1f89e60029;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column expensive">
+            <div class="content">
+              <img src="../res/hotels/Hilton Columbus Downtown.png" alt="" style="width:100%">
+              <h4>Hilton Columbus Downtown</h4>
+              <p>402 North High Street, Columbus, OH, 43215. Starting at $169 a night before taxes</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/hilton-columbus-downtown.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=39049403_278649759_2_2_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=39049403_278649759_2_2_0;hpos=1;matching_block_id=39049403_278649759_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=39049403_278649759_2_2_0__27166;srepoch=1715652089;srpvid=52520e3bb4e100ca;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="column expensive">
+            <div class="content">
+              <img src="../res/hotels/the junto.png" alt="" style="width:100%">
+              <h4>The Junto</h4>
+              <p>77 Belle St, Columbus, OH, 43215. Starting at $195 a night before taxes.</p>
+              <a class="learn-more-button"
+                href="https://www.booking.com/hotel/us/the-junto.html?aid=397656&label=duc511jc-1FCAEoggI46AdIM1gDaKgCiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKkiIuyBsACAdICJDgwMzVkMGE3LWFiMWEtNGEwZS05M2RmLTgwYTRjMDYyMjNhY9gCBeACAQ&sid=df5464579135604c66f0416c7f85e0dc&all_sr_blocks=943705004_366534595_4_0_0;checkin=2024-05-18;checkout=2024-05-19;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=943705004_366534595_4_0_0;hpos=1;matching_block_id=943705004_366534595_4_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=distance_from_search;sr_pri_blocks=943705004_366534595_4_0_0__33915;srepoch=1715652127;srpvid=b3880e4eaced018c;type=total;ucfs=1&"
+                target="_blank">Learn More</a>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
       </section>
 
 
@@ -146,60 +169,58 @@
   <footer>
     <div id="footer_section">
       <!--FOOTER SECTION-->
-    <div class="footer_container">
-      <div class="footer_links"><!--links section-->
+      <div class="footer_container">
+        <div class="footer_links"><!--links section-->
           <div class="footer_link_wrapper"><!--links wrapper-->
-              <div class="footer_link_items"><!-- link group 1-->
-                  <h2>Credits</h2>
-                  <hr class="small_hr">
-                  <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
-                  <a href="../html/sources.html" style="padding-bottom: 3.5px;">Sources</a>
-                  <a href="https://www.columbus.gov/Home">Official Site</a>
-              </div>
-              <div class="footer_link_items"><!-- link group 2-->
-                  <h2>Contact Us</h2>
-                  <hr class="small_hr">
-                  <p>90 West Broad Street</p>
-                  <p>Columbus Ohio 43215</p>
-                  <p>Phone:(614) 645-3111</p>
-              </div>
-              <div class="footer_link_items"><!-- link group 4-->
-                  <h2>Social Media</h2>
-                  <hr class="small_hr">
-                  <div class="wrapper" style="width: 280px;">
-                    <div class="button">
-                      <div class="icon">
-                       <a href=https://www.facebook.com/ColumbusGov" target="_blank" style="color: black;"><i class="fa fa-facebook"></i></a> 
-                      </div>
-                    </div>
-                    <div class="button">
-                      <div class="icon">
-                        <a href="https://www.instagram.com/columbusgov/?hl=en" target="_blank" style="color: black;"><i class="fa fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div class="button">
-                      <div class="icon">
-                       <a href="https://twitter.com/columbusgov" target="_blank" style="color: black;"><i class="fa fa-twitter"></i></a> 
-                      </div>
-                    </div>
-                      <div class="button">
-                        <div class="icon">
-                          <a href="https://www.youtube.com/cityofcolumbus" target="_blank" style="color: black;"><i class="fa fa-youtube"></i></a>
-                        </div>
-                    </div>
+            <div class="footer_link_items"><!-- link group 1-->
+              <h2>Credits</h2>
+              <hr class="small_hr">
+              <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
+              <a href="#" download style="padding-bottom: 3.5px;">Sources</a>
+              <a href="https://www.columbus.gov/Home">Official Site</a>
+            </div>
+            <div class="footer_link_items"><!-- link group 2-->
+              <h2>Contact Us</h2>
+              <hr class="small_hr">
+              <p>90 West Broad Street</p>
+              <p>Columbus Ohio 43215</p>
+              <p>Phone:(614) 645-3111</p>
+            </div>
+            <div class="footer_link_items"><!-- link group 4-->
+              <h2>Social Media</h2>
+              <hr class="small_hr">
+              <div class="wrapper" style="width: 280px;">
+                <div class="button">
+                  <div class="icon">
+                    <a href=https://www.facebook.com/ColumbusGov" target="_blank" style="color: black;"><i
+                        class="fa fa-facebook"></i></a>
                   </div>
-              </div>
-          </div>
-      </div>
-    </div>
-                <!-- add
-          https://www.columbus.gov/Home
-         https://www.youtube.com/watch?v=-eZMk9icpeI
-         https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-         https://www.tripadvisor.com/Hotels-g50226-Columbus_Ohio-Hotels.html
-        https://www.youtube.com/watch?v=STqW8mppEic -->
+                </div>
+                <div class="button">
+                  <div class="icon">
+                    <a href="https://www.instagram.com/columbusgov/?hl=en" target="_blank" style="color: black;"><i
+                        class="fa fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="button">
+                  <div class="icon">
+                    <a href="https://twitter.com/columbusgov" target="_blank" style="color: black;"><i
+                        class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+                <div class="button">
+                  <div class="icon">
+                    <a href="https://www.youtube.com/cityofcolumbus" target="_blank" style="color: black;"><i
+                        class="fa fa-youtube"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </footer>
 
   <!----------------------------------------->

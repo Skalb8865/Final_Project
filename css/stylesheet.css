@@ -9,14 +9,9 @@
   --lightgrey-color: rgb(167, 162, 162);
   --white-color: white;
   --grey-color: #555756;
+  --basically-black: #0a0a0a;
   --bold-font-weight: bold;
-
-  --red: #ef233c;
   --darkred: #c00424;
-  --platinum: #e5e5e5;
-  --black: #2b2d42;
-  --white: #fff;
-  --thumb: #edf2f4;
 }
 
 /*****************************/
@@ -32,14 +27,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--background-color);
 }
 
-br {
-  background-color: var(--background-color);
-  color: var(--background-color);
-}
 
 /*****************************/
 /* HTML page styling End */
@@ -82,6 +73,8 @@ header .menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-out;
+  transition-property: right;
 }
 
 header .menu a {
@@ -127,7 +120,7 @@ header .nav-btn {
 .section-main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/236304/Columbus-Ohio-Skyline-Mural-Wallpaper.jpg?v=638165404917430000");
   background-attachment: fixed;
   background-position: center;
@@ -137,11 +130,12 @@ header .nav-btn {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  text-align: center;
 }
 
 .section-main h1 {
   color: var(--white-color);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -149,11 +143,11 @@ header .nav-btn {
 }
 
 
-.hotel-section-main{
+.hotel-section-main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/CMHAK/cmhak-entrance-0018-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1300px:*");
+  min-height: 100dvh;
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/CMHAK/cmhak-entrance-0018-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1300px:");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,22 +156,23 @@ header .nav-btn {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  text-align: center;
 }
 
-.hotel-section-main h1{
+.hotel-section-main h1 {
   color: var(--white-color);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 80px;
 }
 
-.activities-section-main{
+.activities-section-main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/columbus/NVMM_and_skyline_at_night_credit_Randall_Schieber_edccdf79-d5c9-4b36-85b3-271667d7d2e8.jpg");
+  min-height: 100dvh;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/03/11/28/ferris-wheel-2575709_1280.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,21 +181,22 @@ header .nav-btn {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  text-align: center;
 }
 
-.activities-section-main h1{
+.activities-section-main h1 {
   color: var(--white-color);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 80px;
 }
 
-.transportation-section-main{
+.transportation-section-main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("https://cdn.columbusunderground.com/wp-content/uploads/2021/09/cota-bus-high-street-downtown.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -210,20 +206,22 @@ header .nav-btn {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  text-align: center;
 }
 
-.transportation-section-main{
+.transportation-section-main h1 {
   color: var(--white-color);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 80px;
 }
 
-.restaraunt-section-main{
-  min-height: 100vh;
-  background-image: url("https://images.pexels.com/photos/9638804/pexels-photo-9638804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+.restaraunt-section-main {
+  min-height: 100dvh;
+  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp8465834.jpg&f=1&nofb=1&ipt=31d4e2bbe360c9fca698d075f8cf7e3736a1d62551087584cc17d336584cdc8b&ipo=images"); */
+  background-image: url("https://wallpapers.com/images/featured/food-4k-1pf6px6ryqfjtnyr.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -232,11 +230,12 @@ header .nav-btn {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
+  text-align: center;
 }
 
-.restaraunt-section-main{
+.restaraunt-section-main h1 {
   color: var(--white-color);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -245,11 +244,18 @@ header .nav-btn {
 
 /* About Section */
 .section-two {
-  min-height: 70vh;
+  min-height: 70dvh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.section-two span {
+  text-align: center;
 }
 
 .section-two h2 {
@@ -282,7 +288,7 @@ header .nav-btn {
 
 /* Hotel Section */
 .section-three {
-  min-height: 65vh;
+  min-height: 100dvh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -298,30 +304,42 @@ header .nav-btn {
   text-align: center;
 }
 
-.section-three p {
+.section-three h3 {
   color: var(--lightgrey-color);
-  font-size: 18px;
-  line-height: 2.2rem;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
   margin: 30px 0;
-  margin-top: 30px 0;
-  margin-left: 30px 0;
-  margin-right: 30px 0;
-  margin-bottom: 100px 0 var(--background-color);
+  text-align: center;
+  margin: 100px 0px 50px 0;
 }
 
 /* Activities Section */
 .section-four {
-  min-height: 200vh;
+  min-height: 200dvh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .section-four h2 {
   color: var(--white-color);
   font-size: 50px;
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.section-four h3 {
+  color: var(--lightgrey-color);
+  font-size: 40px;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 30px 0;
   text-align: center;
@@ -338,13 +356,24 @@ header .nav-btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
+.family h3 {
+  margin-top: 100px;
+}
+
+.museums h3 {
+  margin-top: 100px;
+}
+
 /* Transportation Section */
 .section-five {
-  min-height: 163vh;
+  min-height: 100dvh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .section-five h2 {
@@ -353,7 +382,6 @@ header .nav-btn {
   font-weight: 700;
   text-transform: uppercase;
   margin: 30px 0;
-  margin-top: 102px;
   text-align: center;
 }
 
@@ -365,11 +393,14 @@ header .nav-btn {
 
 /* Restaraunts Section */
 .section-six {
-  min-height: 100vh;
+  min-height: 85dvh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
   margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .section-six h2 {
@@ -377,9 +408,8 @@ header .nav-btn {
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 30px 0;
-  margin-top: 102px;
   text-align: center;
+  margin: 30px 0px;
 }
 
 .section-six p {
@@ -399,17 +429,16 @@ header .nav-btn {
     background: var(--black-color);
     flex-direction: column;
     min-width: 400px;
-    height: 100vh;
+    height: 100dvh;
     top: 0;
     right: -100%;
     padding: 80px 50px;
-    transition: 0.5s ease;
+    transition: all 0.5s ease-out;
     transition-property: right;
   }
 
   header .menu.active {
     right: 0;
-
   }
 
   header .menu .close-btn {
@@ -459,7 +488,8 @@ header .nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 60dvh;
+  margin-bottom: 100px;
 }
 
 .card_container {
@@ -495,7 +525,7 @@ header .nav-btn {
 
 .card_img {
   height: 250px;
-  width: 320px;
+  width: 350px;
   margin: 0 auto;
   position: relative;
   z-index: 5;
@@ -519,10 +549,17 @@ header .nav-btn {
 .card_button {
   display: inline-block;
   background-color: var(--CBlue-color);
-  padding: 0.75rem 1.5rem;
+  padding: 0.25rem 1.5rem;
   border-radius: 0.75rem;
   color: var(--white-color);
   font-weight: 600;
+  transition: all .4s ease;
+}
+
+.card_button:hover {
+  transform: scale(1.05);
+  transition: all .4s ease;
+  background-color: var(--CBlue-dark-color);
 }
 
 .swiper-button-prev::after,
@@ -547,15 +584,28 @@ header .nav-btn {
 }
 
 /* Swiper Cards Media Querys */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 560px) {
   .card_data {
     padding: 1rem;
+  }
+
+
+  .card_container {
+    max-width: 500px;
+  }
+
+  .card_content{
+    max-width: 20000px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .card_content {
     margin-inline: 3rem;
+  }
+
+  .card_container {
+    max-width: 768px;
   }
 
   .swiper-button-next,
@@ -566,7 +616,7 @@ header .nav-btn {
 
 @media screen and (min-width:1120px) {
   .card_container {
-    max-width: 1120px;
+    max-width: 1200px;
   }
 
   .swiper-button-next {
@@ -612,91 +662,149 @@ header .nav-btn {
 
 
 /********************************/
-/* Image Fade effect Start*/
-/*******************************/
+/* Image Overlay effect Start*/
+/********************************/
 
-.image_fade_container {
-  position: relative;
-  width: 33%;
-  padding-bottom: 2.3rem;
-  float: left;
-}
-
-.card_fade_image {
-  display: block;
-  height: auto;
-  height: 20rem;
-  width: 22rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20rem;
-  width: 22rem;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: var(--black-color);
-}
-
-.image_fade_container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.overlay-wrapper {
+  padding-right: 75px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   text-align: center;
 }
 
-/********************************/
-/* Image Fade effect End*/
-/*******************************/
-
-.card_scroll_container {
-  max-width: 1400px;
-  padding: 0 15px;
-  margin: 0 auto;
-  margin-bottom: 25px;
+#card-area {
+  padding: 50px 0;
 }
 
-.card_scroll_container h2 {
-  font-size: 32px;
-  margin-bottom: 1em;
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 250px;
+  margin: auto;
+  padding: auto;
 }
 
-.card-title {
+.overlay-box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 425px;
+  width: 475px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 250px;
+}
+
+.overlay-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: 0.5s ease-out;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, black 95%);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: 1.5s ease;
+}
+
+.overlay h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-size: 30px;
+  letter-spacing: 2px;
   color: var(--white-color);
+  text-align: center;
 }
 
-.trasnportation-card-img {
-  width: 250px;
-  height: 250px;
-  transition: all .4s ease;
-  border-style: solid;
-  border-color: var(--white-color);
+.overlay a {
+  margin-top: 10px;
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 14px;
+  background: var(--CRed-color);
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+  transition: 0.45s ease;
 }
 
-.trasnportation-card-img:hover {
-  border-style: solid;
-  border-color: var(--lightgrey-color);
-  transform: translate3D(0, -1px, 0) scale(1.05);
-  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-  transition: all .4s ease;
+.overlay-box:hover img {
+  transform: scale(1.2);
 }
 
-.transportation-text {
-  font-size: 5px;
+.overlay-box:hover .overlay {
+  height: 165%;
+  transition: 1.35s ease;
 }
+
+.overlay-box a:hover {
+  transform: scale(1.1);
+  transition: 0.45s ease;
+  background-color: var(--darkred);
+}
+
+
+@media screen and (max-height:1200px) {
+  .box-area {
+    grid-gap: 175px;
+    margin-left: 73px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overlay-wrapper {
+    margin-left: -148px;
+  }
+
+  .overlay-box {
+    width: 425px;
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .overlay-wrapper .section-titles h3{
+    margin-left: 75px;
+    margin-right: -50px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .section-four {
+    margin-left: 5px;
+  }
+
+
+}
+
+
+/********************************/
+/* Image Overlay effect End*/
+/*******************************/
 
 .small_hr {
   width: 35px;
@@ -708,17 +816,17 @@ header .nav-btn {
   color: #333;
 }
 
-.icon{
+.icon {
   color: black;
   cursor: pointer;
 }
 
-.icon a{
+.icon a {
   text-decoration: none;
   color: var(--black-color);
 }
 
-.button{
+.button {
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -726,49 +834,51 @@ header .nav-btn {
   border-radius: 50px;
   line-height: 60px;
   text-align: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: 0.7s;
   text-decoration: none;
 }
 
-.wrapper .button .icon{
+.wrapper .button .icon {
   font-size: 20px;
 }
 
-.wrapper .button:hover{
+.wrapper .button:hover {
   width: 85px;
   transition: 0.7s;
 }
 
-.wrapper  .button:nth-child(1):hover .icon{
+.wrapper .button:nth-child(1):hover .icon {
   color: #4267B2;
   background: -webkit-gradient(linear, left top, left bottom, from(#4267B2), to(#4267B2));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.wrapper .button:nth-child(2):hover .icon{
+.wrapper .button:nth-child(2):hover .icon {
   background: -webkit-gradient(linear, left top, left bottom, from(#f9ce34), to(#6228d7));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.wrapper .button:nth-child(3):hover .icon{
+.wrapper .button:nth-child(3):hover .icon {
   background: -webkit-gradient(linear, left top, left bottom, from(#1da1f2), to(#1da1f2));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.wrapper .button:nth-child(4):hover .icon{
+.wrapper .button:nth-child(4):hover .icon {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
-/****************************************************************/
+/***********************************************************/
 /*Footer Classes and Styling*/
-.footer_container{
+/**********************************************************/
+
+.footer_container {
   background-color: var(--black-color);
   display: flex;
   justify-content: center;
@@ -776,80 +886,98 @@ header .nav-btn {
   flex-direction: column;
 }
 
-.footer_container p{
+.footer_container p {
   color: var(--white-color);
   padding-bottom: 10px;
 }
 
-.footer_links{
-  width:100%; 
-  max-width:1000px;
-  display:flex;
+.footer_links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
   justify-content: center;
 }
-.footer_link_wrapper{
-  display:flex;
+
+.footer_link_wrapper {
+  display: flex;
 }
-.footer_link_items{
-  display:flex;
+
+.footer_link_items {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin:16px;
+  margin: 16px;
   text-align: left;
-  width:16rem;
+  width: 16rem;
   box-sizing: border-box;
 }
-.footer_link_items h2{
-  color:#fff; 
-  margin-bottom: 1rem; /*margin: 0 0 1rem 0;*/
+
+.footer_link_items h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  /*margin: 0 0 1rem 0;*/
 }
-.footer_link_items a{
-  color:#fff;
+
+.footer_link_items a {
+  color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
   transition: .3s ease-out;
 }
-.footer_link_items a:hover{
+
+.footer_link_items a:hover {
   color: var(--CBlue-color);
   transition: .3s ease-out;
 }
-.social_media{
-  max-width: 1000px;
-  width: 100%;
+
+.website_rights {
+  color: #fff;
 }
-.social_media_wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  width: 90%;
-  margin: 40px auto 0 auto;
+
+
+@media screen and (max-width:1000px) {
+  .footer_link_wrapper {
+    flex-direction: column;
+  }
+
+  .footer_links {
+    padding-top: 1rem;
+  }
 }
-.website_rights{
-  color:#fff;
+
+@media screen and (max-width: 600px) {
+  .footer_link_items {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
 }
-.social_media_icons{
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  width: 240px; 
+
+@media screen and (max-width:750px) {
+  .website_rights {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .row {
-  margin: 8px -16px;
+  margin: 8px -16px 150px -16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
+  flex: 1 1 33%;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
+  display: none;
+  /* Hide columns by default */
 }
 
 /* Clear floats after rows */
@@ -861,8 +989,22 @@ header .nav-btn {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: var(--basically-black);
   padding: 10px;
+  text-align: center;
+  color: var(--lightgrey-color);
+}
+
+.content h4 {
+  color: var(--white-color);
+  font-size: 25px;
+  margin: 15px 0px;
+}
+
+.content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -870,22 +1012,157 @@ header .nav-btn {
   display: block;
 }
 
+#myBtnContainer{
+  background-color: var(--basically-black);
+  width: 355px;
+  padding: 6.5px;
+  border-radius: 10px;
+}
+
 /* Style the buttons */
-.btn {
+.hotel-btn {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: white;
+  background-color: var(--background-color);
+  color: var(--white-color);
   cursor: pointer;
+  border-radius: 15px;
+  transition: .3s ease-out;
 }
 
 /* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
+.hotel-btn:hover {
+  background-color: var(--grey-color);
+  transition: .3s ease-out;
 }
 
 /* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
+.hotel-btn.active {
+  background-color: var(--basically-black);
+  transition: .3s ease-out;
+}
+
+.learn-more-button {
+  display: inline-block;
+  background-color: var(--white-color);
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: var(--black-color);
+  font-weight: 600;
+  transition: all .4s ease;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.learn-more-button:hover {
+  transform: scale(1.05);
+  transition: all .4s ease;
+  background-color: var(--lightgrey-color);
+}
+
+@media screen and (max-width: 600px) {
+  #myBtnContainer{
+    width: 365px;
+    margin-left: -47px;
+    padding-bottom: 10px;
+  }
+  
+  .hotel-btn{
+  margin-top: 5px;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .content{
+    margin-top: 25px;
+    width: 300px;
+    height: 435px;
+    margin-left: -55px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content h4{
+    font-size: 20px;
+  }
+
+  .learn-more-button{
+    align-self: center;
+    width: 150px;
+  }
+}
+
+#transportation-container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#transportation-container h3{
+  color: var(--white-color);
+  font-size: 30px;
+  margin: 50px 0px;
+  border:  2px solid black;
+}
+
+.transportation-img{
+  width: 450px;
+  height: 200px;
+  float: left;
+  display: flex;
+}
+
+#transportation-text{
+  color: var(--white-color);
+  margin: 40px 0px;
+  display: flex;
+}
+
+#transportation-text2{
+  color: var(--white-color);
+  margin: 40px 0px;
+  display: flex;
+}
+
+#transportation-text3{
+  color: var(--white-color);
+  margin: 40px 0px;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .transportation-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  #transportation-text{
+    margin-bottom: 25px;
+  }
+
+  #transportation-text2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #transportation-text3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .section-five h2 span{
+    margin-left: -40px;
+  }
 }
