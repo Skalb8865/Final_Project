@@ -254,7 +254,7 @@ header .nav-btn {
   text-align: center;
 }
 
-.section-two span {
+.section-two span{
   text-align: center;
 }
 
@@ -288,7 +288,7 @@ header .nav-btn {
 
 /* Hotel Section */
 .section-three {
-  min-height: 100dvh;
+  min-height: 100vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -316,7 +316,7 @@ header .nav-btn {
 
 /* Activities Section */
 .section-four {
-  min-height: 200dvh;
+  min-height: 280vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -324,7 +324,6 @@ header .nav-btn {
   align-items: center;
   align-content: center;
   text-align: center;
-  justify-content: center;
 }
 
 .section-four h2 {
@@ -336,7 +335,7 @@ header .nav-btn {
   text-align: center;
 }
 
-.section-four h3 {
+.section-four h3{
   color: var(--lightgrey-color);
   font-size: 40px;
   font-weight: 600;
@@ -356,7 +355,7 @@ header .nav-btn {
   margin-bottom: 100px 0 var(--background-color);
 }
 
-.family h3 {
+.family h3{
   margin-top: 100px;
 }
 
@@ -393,7 +392,7 @@ header .nav-btn {
 
 /* Restaraunts Section */
 .section-six {
-  min-height: 85dvh;
+  min-height: 138vh;
   background: var(--background-color);
   padding: 20px 100px;
   padding-bottom: 0px;
@@ -408,8 +407,11 @@ header .nav-btn {
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 30px 0;
+  margin-top: 55px;
   text-align: center;
-  margin: 30px 0px;
+  margin-bottom: 25px;
+  margin: 55px 0px 40px 0;
 }
 
 .section-six p {
@@ -556,10 +558,10 @@ header .nav-btn {
   transition: all .4s ease;
 }
 
-.card_button:hover {
-  transform: scale(1.05);
+.card_button:hover{
+  transform: translate3D(0, -1px, 0) scale(1.05);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
   transition: all .4s ease;
-  background-color: var(--CBlue-dark-color);
 }
 
 .swiper-button-prev::after,
@@ -959,6 +961,38 @@ header .nav-btn {
   }
 }
 
+@media screen and (max-width:1000px){
+  .footer_link_wrapper{
+    flex-direction: column;
+  }
+.footer_links{
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .footer_link_items{
+    margin:0;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:750px){
+    .services_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .social_media_wrapper{
+        flex-direction: column;
+    }
+    .website_rights{
+        margin-bottom: 1.5rem;
+    }
+    .social_media{
+        margin-bottom: 1.5rem;
+    }
+}
+
 .row {
   margin: 8px -16px 150px -16px;
   display: flex;
@@ -1033,136 +1067,11 @@ header .nav-btn {
 
 /* Add a grey background color on mouse-over */
 .hotel-btn:hover {
-  background-color: var(--grey-color);
-  transition: .3s ease-out;
+  background-color: #ddd;
 }
 
 /* Add a dark background color to the active button */
 .hotel-btn.active {
-  background-color: var(--basically-black);
-  transition: .3s ease-out;
-}
-
-.learn-more-button {
-  display: inline-block;
-  background-color: var(--white-color);
-  padding: 5px 15px;
-  border-radius: 15px;
-  color: var(--black-color);
-  font-weight: 600;
-  transition: all .4s ease;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.learn-more-button:hover {
-  transform: scale(1.05);
-  transition: all .4s ease;
-  background-color: var(--lightgrey-color);
-}
-
-@media screen and (max-width: 600px) {
-  #myBtnContainer{
-    width: 365px;
-    margin-left: -47px;
-    padding-bottom: 10px;
-  }
-  
-  .hotel-btn{
-  margin-top: 5px;
-  }
-
-  .row{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-  }
-
-  .content{
-    margin-top: 25px;
-    width: 300px;
-    height: 435px;
-    margin-left: -55px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content h4{
-    font-size: 20px;
-  }
-
-  .learn-more-button{
-    align-self: center;
-    width: 150px;
-  }
-}
-
-#transportation-container{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#transportation-container h3{
-  color: var(--white-color);
-  font-size: 30px;
-  margin: 50px 0px;
-  border:  2px solid black;
-}
-
-.transportation-img{
-  width: 450px;
-  height: 200px;
-  float: left;
-  display: flex;
-}
-
-#transportation-text{
-  color: var(--white-color);
-  margin: 40px 0px;
-  display: flex;
-}
-
-#transportation-text2{
-  color: var(--white-color);
-  margin: 40px 0px;
-  display: flex;
-}
-
-#transportation-text3{
-  color: var(--white-color);
-  margin: 40px 0px;
-  display: flex;
-}
-
-@media screen and (max-width: 600px) {
-  .transportation-img{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-bottom: 35px;
-  }
-
-  #transportation-text{
-    margin-bottom: 25px;
-  }
-
-  #transportation-text2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  #transportation-text3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .section-five h2 span{
-    margin-left: -40px;
-  }
+  background-color: #666;
+   color: white;
 }
